@@ -1,5 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+:root{
+    --Very_dark_desaturated_blue: hsl(238, 29%, 16%);
+    --Soft_red: hsl(14, 88%, 65%);
+    // Background_gradient
+    --Soft_violet: hsl(273, 75%, 66%);
+    --Soft_blue: hsl(240, 73%, 65%);
+    // text
+    --Very_dark_grayish_blue: hsl(237, 12%, 33%);
+    --Dark_grayish_blue: hsl(240, 6%, 50%);
+    // Dividers
+    --Light_grayish_blue: hsl(240, 5%, 91%);
+}
+
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    // background: linear-gradient(to bottom, #ffcc00, #ff6600);
+    // background: linear-gradient(to bottom, var(--Soft_violet), var(--Soft_blue));
+    background: linear-gradient(to bottom,var(--Soft_violet)20%,var(--Soft_blue) 100%);
+    .card{  
+        position: relative;
+        width: 30rem;
+        border-radius: 2rem;
+        padding-bottom: 3.5rem;
+        background: hsl(0, 0%, 100%);
+        .conteiner-img{
+            position: relative;
+            width: 100%;
+            height: 12.2rem;
+            .box-imgs{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%,-11rem);
+                .bg-pattern{
+                    transform: translateY(-8rem);
+                }
+            }
+        }
+        .conteiner-accordion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
+            h1{
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 2.5rem;
+                color: var(--Very_dark_desaturated_blue);
+            }
+            .box{
+                width: 100%;
+                text-align: left;
+                border-bottom: 1px solid var(--Light_grayish_blue);
+                margin-bottom: 1rem;
+                .title{
+                    min-width: 23.5rem;
+                    color: var(--Very_dark_grayish_blue);
+                    position: relative;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding-bottom: 1.2rem;
+                    .arrow{
+                        cursor: pointer;
+                        margin-left: 0.5rem;
+                        top:15%; 
+                        right: 0;
+                        transition: 0.3s ease-out;
+                        position: absolute;
+                    }
+                    .arrowRotary{
+                        transform: rotate(180deg);
+                    }
+                    
+                }
+                .tituloColor{
+                    color: var(--Very_dark_desaturated_blue);
+                    font-weight: 700;
+                }
+                .parrafo{
+                    display: none;
+                    padding-bottom: 1.6rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                .parrafoMostrar{
+                    display: block;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
