@@ -39,6 +39,7 @@ main .conteiner-card {
   width: 100%;
 }
 main .conteiner-card .card {
+  box-shadow: 0px 2.2rem 2.2rem rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 2rem;
   padding-bottom: 3.5rem;
