@@ -85,7 +85,7 @@ main{
                     border-bottom: 1px solid var(--Light_grayish_blue);
                     margin-bottom: 1.2rem;
                     .title{
-                        border: 1px solid;
+                     
                         transition: 0.5s ease-in-out;
                         min-width: 23.5rem;
                         color: var(--Very_dark_grayish_blue);
@@ -93,11 +93,8 @@ main{
                         font-size: 1.31rem;
                         font-weight: 400;
                         padding-bottom: 1.4rem; 
-                   
                         .arrow{
-                            border: 1px solid;
                             position: absolute;
-                            // padding: 0 1rem 1rem 32.3rem;
                             cursor: pointer;
                             margin-left: 0.5rem;
                             top:15%; 
@@ -106,7 +103,6 @@ main{
                             
                         }
                         .arrowRotary{
-                            // padding: 1rem 32.3rem 0rem 1rem;
                             transform: rotate(180deg);
                         }
                         
