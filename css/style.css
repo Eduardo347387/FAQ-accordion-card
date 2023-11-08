@@ -84,6 +84,7 @@ main .conteiner-card .card .conteiner-accordion .box {
   margin-bottom: 1.2rem;
 }
 main .conteiner-card .card .conteiner-accordion .box .title {
+  border: 1px solid;
   transition: 0.5s ease-in-out;
   min-width: 23.5rem;
   color: var(--Very_dark_grayish_blue);

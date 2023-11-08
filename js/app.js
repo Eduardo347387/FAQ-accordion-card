@@ -21,7 +21,7 @@ $accordion.forEach((element)=>{
 
 function abrirArrow(e){
     idArrow = e.target.id
-   
+    console.log(e.target)
     if(idArrow === 'arrow'){
       
         if($titulo && $parrafo && $flecha) addClass($titulo,$flecha,$parrafo) 
