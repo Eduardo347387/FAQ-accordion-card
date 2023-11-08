@@ -1,9 +1,16 @@
+// // document.addEventListener('DOMContentLoaded', ()=>{
+// // });
+// const $containerImgs = document.getElementById('box-imgs') 
+
+// window.addEventListener('resize', function() {
+//     if (window.innerWidth > 768) {
+        
+//     } 
+// });
+
+
 const $accordion =  document.querySelectorAll('#accordion')
 let $titulo = '',$flecha,$parrafo
-
-// $titulos.forEach(titulo => {
-//     console.log(titulo.children[0])
-// });
 
 $accordion.forEach((element)=>{
     // console.log(element.children[0].children[0])

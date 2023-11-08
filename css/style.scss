@@ -29,93 +29,274 @@ body{
 
 
 main{
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 0 2rem;
-    // background: linear-gradient(to bottom, #ffcc00, #ff6600);
-    // background: linear-gradient(to bottom, var(--Soft_violet), var(--Soft_blue));
     background: linear-gradient(to bottom,var(--Soft_violet)20%,var(--Soft_blue) 100%);
-    .card{  
+    .conteiner-card{
+        border: 2px solid;
         position: relative;
-        width: 30rem;
-        border-radius: 2rem;
-        padding-bottom: 3.5rem;
-        background: hsl(0, 0%, 100%);
-        .conteiner-img{
-            position: relative;
-            width: 100%;
-            height: 12.2rem;
-            .box-imgs{
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translate(-50%,-11rem);
-                .bg-pattern{
-                    transform: translateY(-8rem);
-                }
-            }
-        }
-        .conteiner-accordion{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0 2rem;
-            h1{
-                text-align: center;
-                font-size: 3rem;
-                font-weight: 700;
-                margin-bottom: 2.5rem;
-                color: var(--Very_dark_desaturated_blue);
-            }
-            .box{
-                width: 100%;
-                text-align: left;
-                border-bottom: 1px solid var(--Light_grayish_blue);
-                margin-bottom: 1rem;
-                .title{
-                    min-width: 23.5rem;
-                    color: var(--Very_dark_grayish_blue);
-                    position: relative;
-                    font-size: 1.2rem;
-                    font-weight: 400;
-                    padding-bottom: 1.2rem;
-                    .arrow{
-                        cursor: pointer;
-                        margin-left: 0.5rem;
-                        top:15%; 
-                        right: 0;
-                        transition: 0.3s ease-out;
-                        position: absolute;
-                    }
-                    .arrowRotary{
-                        transform: rotate(180deg);
-                    }
-                    
-                }
-                .tituloColor{
-                    color: var(--Very_dark_desaturated_blue);
-                    font-weight: 700;
-                }
-                .parrafo{
-                    display: none;
-                    padding-bottom: 1.6rem;
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
-                .parrafoMostrar{
-                    display: block;
-                }
-            }
-        }
+        min-width: 30rem;
+        width: 100%;
         
+        .card{  
+            border: 2px solid #ff0303;
+            position: relative;
+            border-radius: 2rem;
+            padding-bottom: 3.5rem;
+            background: hsl(0, 0%, 100%);
+            transition: 0.5s ease-in-out;
+            .img-illustration-box-desktop{
+                display: none;
+            }
+            .conteiner-img{
+                
+                position: relative;
+                width: 100%;
+                height: 12.2rem;
+            
+                .box-imgs-movile{
+                    border: 2px solid #ff0303;
+                    
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%,-11rem);
+                    .bg-pattern{    
+                        transform: translateY(-8rem);
+                    }
+                }
+                .box-imgs-laptop{
+                    display: none;
+                }
+    
+            }
+            .conteiner-accordion{
+                padding: 0 2.5rem;
+                transition: 0.5s ease-in-out;
+                h1{
+                    text-align: center;
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin-bottom: 2.5rem;
+                    color: var(--Very_dark_desaturated_blue);
+                }
+                .box{
+                    max-width: 58rem;
+                    text-align: left;
+                    border-bottom: 1px solid var(--Light_grayish_blue);
+                    margin-bottom: 1.2rem;
+                    .title{
+                        transition: 0.5s ease-in-out;
+                        min-width: 23.5rem;
+                        color: var(--Very_dark_grayish_blue);
+                        position: relative;
+                        font-size: 1.31rem;
+                        font-weight: 400;
+                        padding-bottom: 1.4rem;
+                        .arrow{
+                            cursor: pointer;
+                            margin-left: 0.5rem;
+                            top:15%; 
+                            right: 0;
+                            transition: 0.3s ease-out;
+                            position: absolute;
+                        }
+                        .arrowRotary{
+                            transform: rotate(180deg);
+                        }
+                        
+                    }
+                    .tituloColor{
+                        color: var(--Very_dark_desaturated_blue);
+                        font-weight: 700;
+                    }
+                    .parrafo{
+                        max-width: 40rem;
+                        display: none;
+                        padding-bottom: 1.2rem;
+                        font-size: 1.21rem;
+                        font-weight: 400;
+                        line-height: 1.5rem;
+                        color: var(--Dark_grayish_blue);
+                        transition: 0.5s ease-in-out;
+                    }
+                    .parrafoMostrar{
+                        transition: 0.5s ease-in-out;
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(min-width:426px){
+    main{
+        .conteiner-card{
+            width: 90%;
+            .card{
+                width: 100%;
+                .conteiner-img{
+                    .box-imgs-movile{                  
+                        width: 30rem;
+                        
+                        .bg-pattern{
+                            width: 30rem;
+                            transform: translate(0,-10rem);
+                        }
+                    }
+                } 
+                .conteiner-accordion{
+                    h1{
+                        margin-top: 6rem;
+                    }
+                    padding: 0 3rem;
+                    .box{
+                        .title{
+                            font-size: 1.51rem;
+                        }
+                        .parrafo{
+                            font-size: 1.34rem;   
+                        }
+                    }
+                }  
+            }
+        }
     }
 }
 
 
+@media(min-width:768px){
+    main{
+        .conteiner-card{
+            width: 73rem;
+            &::before{
+                top: 0;
+                transform: translate(-6.3rem,20rem);
+                z-index: 2;
+                content: '';
+                position: absolute;
+                width: 13rem;
+                height: 11.5rem;
+                background-image: url(../images/illustration-box-desktop.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 12rem;
+            }
+            .card{
+                position: relative;
+                z-index: 1;
+                overflow:hidden;
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 0;
+                
+                .conteiner-img{
+                    width: 50%;
+                    height: auto;
+                    .box-imgs-movile{
+                        display: none;
+                    }
+                    .box-imgs-laptop{
+                            position: relative;
+                            top: 3rem;    
+                            .img-illustration-woman{
+                                z-index: 1;
+                                position: absolute;
+                                width: 36rem;
+                                transform: translate(-6rem,5rem);
+                            }
+                            .bg-pattern{
+                                position: absolute;
+                               
+                                transform: translate(-36.6rem,-20rem);
+                                width: 67rem;
+                                height: 69rem;
+                            }
+                        display: unset;
+                    }
+    
+                }
+                .conteiner-accordion{
+                    padding-left: 0;
+                    padding-right: 6rem;
+                    width: 50%;
+                    padding-bottom: 4rem;
+                    h1{
+                        text-align: left;
+                    }
+                    .box{
+                        max-width: 38rem;
+                    }
+                }
+               
+            }
+        }
+    }
+}
 
+
+@media(min-width:1025px){
+    main{
+        .conteiner-card{
+            
+            min-width: unset;
+            max-width: unset;
+            width: unset;
+            width: 85rem;
+            &::before{
+                top: 0;
+                transform: translate(-7.3rem,20rem);
+                z-index: 2;
+                content: '';
+                position: absolute;
+                width: 15rem;
+                height: 14rem;
+                background-image: url(../images/illustration-box-desktop.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 15rem;
+            }
+            .card{
+                .conteiner-img{
+                    width: 50%;
+                    height: auto;
+                    .box-imgs-laptop{
+                            .img-illustration-woman{
+                                width: 42rem;
+                                transform: translate(-7.3rem,3.5rem);
+                            }
+                            .bg-pattern{
+                                transform: translate(-35rem,-20rem);
+                                width: 70rem;
+                                height:71.8rem;
+                            }
+                        display: unset;
+                    }
+    
+                }
+                .conteiner-accordion{
+                    h1{
+                        margin-top: 4.6rem;
+                    }
+                    padding-right: 8rem;
+                    padding-bottom: 4rem;
+                    .box{
+                        margin-bottom: 1.5rem;
+                        .title{
+                            padding-bottom: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
