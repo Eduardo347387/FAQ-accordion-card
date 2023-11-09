@@ -71,7 +71,7 @@ main .conteiner-card .card .conteiner-accordion {
   padding: 0 2.5rem;
   transition: 0.5s ease-in-out;
 }
-main .conteiner-card .card .conteiner-accordion h1 {
+main .conteiner-card .card .conteiner-accordion .titulo {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
@@ -85,7 +85,7 @@ main .conteiner-card .card .conteiner-accordion .accordion {
   border-bottom: 1px solid var(--Light_grayish_blue);
   margin-bottom: 1.2rem;
 }
-main .conteiner-card .card .conteiner-accordion .accordion .title {
+main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
   transition: 0.5s ease-in-out;
   min-width: 23.5rem;
   color: var(--Very_dark_grayish_blue);
@@ -94,7 +94,7 @@ main .conteiner-card .card .conteiner-accordion .accordion .title {
   font-weight: 400;
   padding-bottom: 1.4rem;
 }
-main .conteiner-card .card .conteiner-accordion .accordion .title .arrow {
+main .conteiner-card .card .conteiner-accordion .accordion .subTitulo .arrow {
   position: absolute;
   cursor: pointer;
   margin-left: 0.5rem;
@@ -104,7 +104,7 @@ main .conteiner-card .card .conteiner-accordion .accordion .title .arrow {
   width: 1.1rem;
   height: 0.8rem;
 }
-main .conteiner-card .card .conteiner-accordion .accordion .title .arrowRotary {
+main .conteiner-card .card .conteiner-accordion .accordion .subTitulo .arrowRotary {
   transform: rotate(180deg);
 }
 main .conteiner-card .card .conteiner-accordion .accordion .tituloColor {
@@ -150,10 +150,10 @@ main .conteiner-card .card .conteiner-accordion .accordion .parrafoMostrar {
   main .conteiner-card .card .conteiner-accordion {
     padding: 0 3rem;
   }
-  main .conteiner-card .card .conteiner-accordion h1 {
+  main .conteiner-card .card .conteiner-accordion .titulo {
     margin-top: 6rem;
   }
-  main .conteiner-card .card .conteiner-accordion .accordion .title {
+  main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
     font-size: 1.51rem;
   }
   main .conteiner-card .card .conteiner-accordion .accordion .parrafo {
@@ -215,16 +215,16 @@ main .conteiner-card .card .conteiner-accordion .accordion .parrafoMostrar {
     width: 50%;
     padding-bottom: 4rem;
   }
-  main .conteiner-card .card .conteiner-accordion h1 {
+  main .conteiner-card .card .conteiner-accordion .titulo {
     text-align: left;
   }
   main .conteiner-card .card .conteiner-accordion .accordion {
     max-width: 38rem;
   }
-  main .conteiner-card .card .conteiner-accordion .accordion .title {
+  main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
     cursor: pointer;
   }
-  main .conteiner-card .card .conteiner-accordion .accordion .title:hover {
+  main .conteiner-card .card .conteiner-accordion .accordion .subTitulo:hover {
     color: var(--Soft_red);
   }
 }
@@ -268,13 +268,13 @@ main .conteiner-card .card .conteiner-accordion .accordion .parrafoMostrar {
     padding-right: 8rem;
     padding-bottom: 4rem;
   }
-  main .conteiner-card .card .conteiner-accordion h1 {
+  main .conteiner-card .card .conteiner-accordion .titulo {
     margin-top: 4.6rem;
   }
   main .conteiner-card .card .conteiner-accordion .accordion {
     margin-bottom: 1.5rem;
   }
-  main .conteiner-card .card .conteiner-accordion .accordion .title {
+  main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
     padding-bottom: 1.6rem;
   }
 }/*# sourceMappingURL=style.css.map */

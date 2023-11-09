@@ -10,16 +10,16 @@ $accordion.forEach((element)=>{
 
 
 function abrirArrow(e){
-    id = e.target.id;
-
-    if(id === 'arrow'){
+    clase = e.target.classList[0]
+  
+    if(clase === 'arrow'){
         isAccordionActive()
         $titulo = e.target.parentElement
         $flecha = e.target
         $parrafo = e.target.parentElement.parentElement.children[1]
         addClass($titulo,$flecha,$parrafo) 
     }
-    if(id === 'title'){
+    if(clase === 'subTitulo'){
         isAccordionActive()
         $titulo =e.target
         $flecha = e.target.children[0]

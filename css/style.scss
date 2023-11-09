@@ -75,7 +75,7 @@ main{
             .conteiner-accordion{
                 padding: 0 2.5rem;
                 transition: 0.5s ease-in-out;
-                h1{
+                .titulo{
                     text-align: center;
                     font-size: 3rem;
                     font-weight: 700;
@@ -89,7 +89,7 @@ main{
                     text-align: left;
                     border-bottom: 1px solid var(--Light_grayish_blue);
                     margin-bottom: 1.2rem;
-                    .title{
+                    .subTitulo{
                         transition: 0.5s ease-in-out;
                         min-width: 23.5rem;
                         color: var(--Very_dark_grayish_blue);
@@ -169,12 +169,12 @@ main{
                     }
                 } 
                 .conteiner-accordion{
-                    h1{
+                    .titulo{
                         margin-top: 6rem;
                     }
                     padding: 0 3rem;
                     .accordion{
-                        .title{
+                        .subTitulo{
                             font-size: 1.51rem;
                         }
                         .parrafo{
@@ -243,12 +243,12 @@ main{
                     padding-right: 6rem;
                     width: 50%;
                     padding-bottom: 4rem;
-                    h1{
+                    .titulo{
                         text-align: left;
                     }
                     .accordion{
                         max-width: 38rem;
-                        .title{
+                        .subTitulo{
                             cursor: pointer;
                             &:hover{
                                 color: var(--Soft_red);
@@ -303,14 +303,14 @@ main{
     
                 }
                 .conteiner-accordion{
-                    h1{
+                    .titulo{
                         margin-top: 4.6rem;
                     }
                     padding-right: 8rem;
                     padding-bottom: 4rem;
                     .accordion{
                         margin-bottom: 1.5rem;
-                        .title{
+                        .subTitulo{
                             padding-bottom: 1.6rem;
                         }
                     }
