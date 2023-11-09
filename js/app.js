@@ -1,5 +1,5 @@
 
-const $accordion =  document.querySelectorAll('#accordion')
+const $accordion =  document.querySelectorAll('.accordion')
 let $titulo = '',$flecha,$parrafo
 
 $accordion.forEach((element)=>{
