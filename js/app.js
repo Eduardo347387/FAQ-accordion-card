@@ -1,41 +1,40 @@
+let title, arrow, paragraph;
 
-const $accordion =  document.querySelectorAll('.accordion')
-let $titulo = '',$flecha,$parrafo
+const accordions = document.querySelectorAll('.accordion');
 
-$accordion.forEach((element)=>{
-    // console.log(element.children[0].children[0])
-    element.addEventListener('click',abrirArrow)
-})
+accordions.forEach((accordion) => {
+    accordion.addEventListener('click', () => {
+        handleAccordionClick(accordion);
+    });
+});
 
+function handleAccordionClick(accordion) {
+    toggleClasses(title, arrow, paragraph);
+    
+    title = getTitle(accordion);
+    arrow = getArrow(title);
+    paragraph = getParagraph(accordion);
 
-
-function abrirArrow(e){
-    clase = e.target.classList[0]
-  
-    if(clase === 'arrow'){
-        isAccordionActive()
-        $titulo = e.target.parentElement
-        $flecha = e.target
-        $parrafo = e.target.parentElement.parentElement.children[1]
-        addClass($titulo,$flecha,$parrafo) 
-    }
-    if(clase === 'subTitulo'){
-        isAccordionActive()
-        $titulo =e.target
-        $flecha = e.target.children[0]
-        $parrafo = e.target.parentElement.children[1] 
-        addClass($titulo,$flecha,$parrafo) 
-    }
-   
-}   
-
-function isAccordionActive(){
-    if($titulo && $parrafo && $flecha) addClass($titulo,$flecha,$parrafo) 
+    toggleClasses(title, arrow, paragraph);
 }
 
-function addClass(titulo,flecha,parrafo){
-    titulo.classList.toggle('tituloColor')
-    flecha.classList.toggle('arrowRotary')
-    parrafo.classList.toggle('parrafoMostrar')
+function getTitle(accordion) {
+    return accordion.querySelector('.subTitulo') || accordion;
+}
+
+function getArrow(title) {
+    return title.querySelector('.arrow');
+}
+
+function getParagraph(accordion) {
+    return accordion.querySelector('.parrafo');
+}
+
+function toggleClasses(title, arrow, paragraph) {
+    if (title && arrow && paragraph) {
+        title.classList.toggle('tituloColor');
+        arrow.classList.toggle('arrowRotary');
+        paragraph.classList.toggle('parrafoMostrar');
+    }
 }
 
