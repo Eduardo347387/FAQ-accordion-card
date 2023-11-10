@@ -86,6 +86,7 @@ main .conteiner-card .card .conteiner-accordion .accordion {
   margin-bottom: 1.2rem;
 }
 main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
+  cursor: pointer;
   transition: 0.5s ease-in-out;
   min-width: 23.5rem;
   color: var(--Very_dark_grayish_blue);
@@ -96,7 +97,6 @@ main .conteiner-card .card .conteiner-accordion .accordion .subTitulo {
 }
 main .conteiner-card .card .conteiner-accordion .accordion .subTitulo .arrow {
   position: absolute;
-  cursor: pointer;
   margin-left: 0.5rem;
   top: 15%;
   right: 0;
